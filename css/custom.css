@@ -63,6 +63,26 @@
 
   /* Infographics */
   --color-info-bg: #ffffff;
+  --color-infographic-bg: #a0c7bd;
   --color-infobox-1-bg: #dbe2f5;
   --color-infobox-2-bg: #dbe2f5;
+}
+
+button[id^="info"] {
+  background-color: #fffae2;
+  color: #000000;
+  border: none;
+  border-radius: 37px;
+  padding: 10px 25px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0 8px;
+}
+
+button[id^="info"]:hover {
+  background-color: #ff4b00;
+  color: #ffffff;
 }
