@@ -40,3 +40,41 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+.my_scale {
+  transform: scale(1.6);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+.wiggle {
+  animation: wiggle 1s linear infinite;
+}
+
+#Energi {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
