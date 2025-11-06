@@ -35,17 +35,30 @@
 
     <main>
       <h1>INDBERET</h1>
+
       <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+        <article class="form-box">
+          <div class="box-header">INDBERET</div>
+          <form id="webform">
+            <label>Fornavn</label>
+            <input type="text" />
+            <label>Efternavn</label>
+            <input type="text" />
+            <label>Email</label>
+            <input type="email" />
+            <label>Password</label>
+            <input type="password" />
+            <label>Indberet</label>
+            <textarea></textarea>
+            <button type="submit" class="submit-btn">Indsend →</button>
+          </form>
         </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+
+        <article class="form-box">
+          <div class="box-header">SUMMARY</div>
+          <div class="summary-content">
+            <p class="placeholder">Opsummering</p>
+          </div>
         </article>
       </section>
     </main>
