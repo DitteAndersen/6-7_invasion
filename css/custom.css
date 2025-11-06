@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: #f9f3d5; /* page background */
 
   /* Header */
   --color-head-bg: #ff4b00;
@@ -39,9 +39,9 @@
   --color-card-bg: #fff;
   --color-cta-card-bg: #ff4b00;
   /* news-cards */
-  --color-news-bg: #fffae2;
+  --color-news-bg: #ffffff;
   --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
+  --color-cta-newscard-bg: #ff4b00;
   --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
@@ -100,7 +100,7 @@ button[id^="info"]:hover {
   background: #fff;
   border-radius: 20px;
   width: 460px; /* præcis boksbredde */
-  height: 800px; /* præcis højde */
+  height: 900px; /* præcis højde */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -174,21 +174,63 @@ button[id^="info"]:hover {
   padding: 32px 40px;
 }
 
-/* RESPONSIV TIL MOBIL */
-@media (max-width: 1024px) {
-  #register #form-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
+.summary-content p {
+  margin-bottom: 18px;
+}
 
-  #register .form-box {
-    width: 90%;
-    height: auto;
-  }
+.summary-content ul {
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
 
-  #register #webform input,
-  #register #webform textarea {
-    width: 100%;
-  }
+.summary-content li {
+  margin-bottom: 6px;
+}
+
+.summary-content .warning {
+  margin-top: 50px;
+}
+
+.warning {
+  margin-top: 30px;
+  padding: 18px 20px;
+  background: #fff3cd; /* lys gul baggrund */
+  border-left: 5px solid #d39e00; /* kraftig gul/brun markering */
+  border-radius: 4px;
+  color: #4a3d00; /* mørk tekst */
+  font-size: 0.95rem;
+  line-height: 1.6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* error messages */
+/* Error message hidden by default */
+.error-message {
+  display: none;
+  color: darkred;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* Show red border + error message when invalid */
+.form-group:has(:user-invalid) input,
+.form-group:has(:user-invalid) textarea {
+  border-color: darkred;
+  outline: 2px solid #f005;
+}
+
+.form-group:has(:user-invalid) .error-message {
+  display: block;
+}
+
+/* Mark required fields with * */
+.form-group:has(:required) label::after {
+  content: " *";
+  color: red;
+}
+
+/* Remove default browser popup focus outline */
+:focus-visible {
+  outline: 2px solid #6f90eb;
+  outline-offset: 2px;
 }
