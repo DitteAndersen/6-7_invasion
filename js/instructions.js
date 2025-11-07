@@ -3,6 +3,7 @@ console.log("loaded instructions...");
 document.querySelector("#info").addEventListener("click", () => {
   console.log("Klik på Hoved-knappen!");
   document.querySelector("#head").classList.toggle("my_scale");
+  document.querySelector("article").style.display = "none";
   document.querySelector(".info-text h2").textContent = "Hoved";
   document.querySelector("#efficiency").innerHTML =
     "<strong>Indtrængningen</strong><br><br>" +
@@ -14,6 +15,8 @@ document.querySelector("#info").addEventListener("click", () => {
 document.querySelector("#info2").addEventListener("click", () => {
   console.log("Klik på Arm-knappen!");
   document.querySelector("#Arms").classList.toggle("wiggle");
+  document.querySelector("article").style.display = "none";
+
   document.querySelector(".info-text h2").textContent = "Armbevægelser";
 
   document.querySelector("#efficiency").innerHTML =
@@ -26,11 +29,12 @@ document.querySelector("#info2").addEventListener("click", () => {
 document.querySelector("#info3").addEventListener("click", () => {
   console.log("Klik på Energi-knappen!");
   document.querySelector("#Energi").classList.toggle("spin");
+  document.querySelector("article").style.display = "none";
   document.querySelector(".info-text h2").textContent = "Energi niveau";
 
   document.querySelector("#efficiency").innerHTML =
     "<strong>Den sidste fase</strong><br><br>" +
-    "Til sidst rammes kroppen af ekstrem energi — som et elektrisk overtag.";
+    "Til sidst rammes kroppen af ekstrem energi — som et elektrisk overtag. Øjnene bliver matte, huden bleg, og pulsen stiger langt over det normale. De smittede kan bevæge sig i timevis uden hvile, som om de drives af en kraft, der ikke længere er deres egen. Når energien endelig slipper op, bliver der stille. Fuldstændig stille. Men rummet summer stadig. Som om tallene stadig er der. Et sted mellem 6 og 7.";
   document.querySelector("#requirement").textContent =
     "“Nogle siger, man stadig kan høre dem tælle, hvis man står helt stille ved Børm-skolen efter mørkets frembrud.”";
 });
