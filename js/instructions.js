@@ -3,7 +3,7 @@ console.log("loaded instructions...");
 document.querySelector("#info").addEventListener("click", () => {
   console.log("Klik på Hoved-knappen!");
   document.querySelector("#head").classList.toggle("my_scale");
-  document.querySelector("article").style.display = "none";
+  document.querySelector("article").classList.add("hidden");
   document.querySelector(".info-text h2").textContent = "Hoved";
   document.querySelector("#efficiency").innerHTML =
     "<strong>Indtrængningen</strong><br><br>" +
@@ -15,8 +15,7 @@ document.querySelector("#info").addEventListener("click", () => {
 document.querySelector("#info2").addEventListener("click", () => {
   console.log("Klik på Arm-knappen!");
   document.querySelector("#Arms").classList.toggle("wiggle");
-  document.querySelector("article").style.display = "none";
-
+  document.querySelector("article").classList.add("hidden");
   document.querySelector(".info-text h2").textContent = "Armbevægelser";
 
   document.querySelector("#efficiency").innerHTML =
@@ -29,7 +28,8 @@ document.querySelector("#info2").addEventListener("click", () => {
 document.querySelector("#info3").addEventListener("click", () => {
   console.log("Klik på Energi-knappen!");
   document.querySelector("#Energi").classList.toggle("spin");
-  document.querySelector("article").style.display = "none";
+  document.querySelector("article").classList.add("hidden");
+
   document.querySelector(".info-text h2").textContent = "Energi niveau";
 
   document.querySelector("#efficiency").innerHTML =
