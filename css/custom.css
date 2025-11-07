@@ -287,3 +287,6 @@ action-buttons {
   line-height: 1.45;
   padding-top: 50px;
 }
+.hidden {
+  display: none;
+}
