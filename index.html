@@ -18,10 +18,12 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html">
+            <img src="img/6_7.png" alt="Mit logo" />
+          </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
         <button class="burger">
@@ -31,89 +33,113 @@
         </button>
       </nav>
     </header>
+
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img src="img/warning-sign.png" alt="Advarsel ikon" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>6–7 Invasionen er i hastig udvikling</h1>
+          <p class="sub">Nye tilfælde registreres hver dag.</p>
         </div>
       </div>
     </section>
+
     <main>
       <section id="daily">
+        <!-- Kort 1: Symptomerne -->
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/11.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Symptomerne</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Hvor begynder 6–7-sygdommen? De første tegn viser sig i hovedet:
+              indre ekko, tankeforstyrrelser og ubestemmelige gentagelser. Læs
+              hvordan fasen starter.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="#" class="cta_btn">Se mere</a>
           </div>
         </article>
+
+        <!-- Kort 2: Kroppens reaktion -->
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/22.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Kroppens reaktion</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Hvorfor bevæger de sig sådan? Vidner beskriver rytmiske
+              armbevægelser, som om de smittede reagerer på en usynlig impuls.
+              Eksperter undersøger nu mønstrerne.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="#" class="cta_btn">Se mere</a>
           </div>
         </article>
       </section>
+
       <section id="breaking">
+        <!-- Nyhed 1 -->
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>Mystisk lydoptagelse går viralt</p>
+          <img src="img/lyd.png" alt="news_img" />
+          <a class="cta_btn" href="#">Læs mere</a>
         </article>
+
+        <!-- Nyhed 2 -->
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>Rapporter om natlig aktivitet</p>
+          <img src="img/træt.png" alt="news_img" />
+          <a class="cta_btn" href="#">Læs mere</a>
         </article>
+
+        <!-- Nyhed 3 -->
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>Lokale observationer</p>
+          <img src="img/23.png" alt="news_img" />
+          <a class="cta_btn" href="#">Læs mere</a>
         </article>
       </section>
     </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
+    <!-- FÆLLES POPUP-OVERLAY TIL ALLE "SE/LÆS MERE" -->
+    <div id="popup-overlay" class="popup_overlay" hidden>
+      <div class="popup_box">
+        <h2 id="popup-title"></h2>
+        <p id="popup-text"></p>
+        <button id="popup-close">Luk</button>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>6–7 Invasionen</h4>
+          <p>Officiel informationsside om den igangværende 6–7 situation.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="instruction.html">Nærkontakt</a></li>
+            <li><a href="register.html">Indberet</a></li>
+            <li><a href="#">Retningslinjer</a></li>
+            <li><a href="#">Ofte stillede spørgsmål</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="#">Hotline: 1234 1234</a></li>
+            <li><a href="#">Mail: info@67.hjælp</a></li>
+            <li><a href="#">Beredskabscenter</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
+
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
