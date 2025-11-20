@@ -1,21 +1,18 @@
 :root {
   /* Colours */
-  --color-bg: #f9f3d5; /* page background */
+  --color-bg: #f9e4d5; /* page background */
 
   /* Header */
   --color-head-bg: #ff4b00;
 
   /* Logotype */
-  --color-logotype-bg: #000000;
   --color-text-logotype: #fffae2;
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #6f90eb;
+  --color-menu-bg: #000;
   /* Links */
-  --color-link-bg: #fffae2;
-  --color-link-hover: #ffffff; /* used */
-  --color-link-active: #ff4b00; /* used */
+  --color-link-bg: #ffff;
   --border-radius-links: 37px;
 
   /* Headlines og rubrik */
@@ -40,9 +37,9 @@
   --color-cta-card-bg: #ff4b00;
   /* news-cards */
   --color-news-bg: #ffffff;
-  --color-news-bg-inverted: #dbe2f5;
+  --color-news-bg-inverted: #f2c5b0;
   --color-cta-newscard-bg: #ff4b00;
-  --color-cta-newscard-bg-inverted: #6f90eb;
+  --color-cta-newscard-bg-inverted: #ffffff;
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -289,4 +286,66 @@ action-buttons {
 }
 .hidden {
   display: none;
+}
+
+#main-disclamer-content img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+#logotype-wrapper img {
+  height: 65px; /* prøv 32, 40 eller 48 */
+  width: auto;
+  display: block;
+}
+
+.site-footer {
+  background: #111;
+  color: #eee;
+  padding: 4rem 4rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+/* 3 kolonner hen over hele footeren */
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* spreder kolonnerne ud */
+  gap: 4rem;
+  width: 100%;
+}
+
+.footer-col {
+  flex: 1; /* alle kolonner fylder lige meget */
+  min-width: 200px;
+}
+
+/* Kolonne-styling */
+.footer-col h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #f15a24;
+}
+
+.footer-col p,
+.footer-col ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-col a:hover {
+  color: #fff;
 }
