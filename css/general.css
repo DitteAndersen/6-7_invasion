@@ -106,7 +106,7 @@ nav a {
   margin-left: 1rem;
 }
 
-/* Global menu */
+/** Global menu **/
 header nav li a {
   margin: 1.5rem;
   background-color: var(--color-link-bg);
