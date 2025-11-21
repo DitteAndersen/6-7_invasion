@@ -25,7 +25,14 @@
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li class="menu-switch">
+            <label class="theme-switch">
+              <input type="checkbox" id="dark-toggle" />
+              <span class="slider"></span>
+            </label>
+          </li>
         </ul>
+
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -46,7 +53,6 @@
 
     <main>
       <section id="daily">
-        <!-- Kort 1: Symptomerne -->
         <article class="daily_card">
           <img src="img/11.png" alt="teaser_img" />
           <div class="daily_text">
@@ -60,7 +66,6 @@
           </div>
         </article>
 
-        <!-- Kort 2: Kroppens reaktion -->
         <article class="daily_card">
           <img src="img/22.png" alt="teaser_img" />
           <div class="daily_text">
@@ -76,7 +81,6 @@
       </section>
 
       <section id="breaking">
-        <!-- Nyhed 1 -->
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Mystisk lydoptagelse går viralt</p>
@@ -84,7 +88,6 @@
           <a class="cta_btn" href="#">Læs mere</a>
         </article>
 
-        <!-- Nyhed 2 -->
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Rapporter om natlig aktivitet</p>
@@ -92,7 +95,6 @@
           <a class="cta_btn" href="#">Læs mere</a>
         </article>
 
-        <!-- Nyhed 3 -->
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lokale observationer</p>
@@ -102,7 +104,6 @@
       </section>
     </main>
 
-    <!-- FÆLLES POPUP-OVERLAY TIL ALLE "SE/LÆS MERE" -->
     <div id="popup-overlay" class="popup_overlay" hidden>
       <div class="popup_box">
         <h2 id="popup-title"></h2>
