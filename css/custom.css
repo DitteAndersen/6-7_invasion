@@ -60,7 +60,8 @@
 
   /* Infographics */
   --color-info-bg: #ffffff;
-  --color-infographic-bg: #a0c7bd;
+  --color-infographic-bg: #712e2e;
+  --color-form-box: #ffffff;
 }
 
 button[id^="info"] {
@@ -81,7 +82,7 @@ button[id^="info"]:hover {
   background-color: #ff4b00;
   color: #ffffff;
 }
-/* FORM SECTION: centreret 16-column grid-lignende spacing */
+/* FORM */
 #register #form-section {
   display: flex;
   justify-content: center;
@@ -128,7 +129,7 @@ button[id^="info"]:hover {
   font-size: 0.95rem;
 }
 
-/* INPUTFELTER – smalle, afrundede, som i referencen */
+/* INPUTFELTER */
 #register #webform input,
 #register #webform textarea {
   width: 320px;
@@ -199,15 +200,14 @@ button[id^="info"]:hover {
 }
 
 /* error messages */
-/* Error message hidden by default */
 .error-message {
   display: none;
-  color: darkred;
+  color: rgb(148, 95, 48);
   font-size: 0.85rem;
   margin-top: 4px;
 }
 
-/* Show red border + error message when invalid */
+/* red border + error message*/
 .form-group:has(:user-invalid) input,
 .form-group:has(:user-invalid) textarea {
   border-color: darkred;
@@ -296,7 +296,7 @@ action-buttons {
 }
 
 #logotype-wrapper img {
-  height: 65px; /* prøv 32, 40 eller 48 */
+  height: 65px;
   width: auto;
   display: block;
 }
@@ -309,20 +309,18 @@ action-buttons {
   font-size: 0.9rem;
 }
 
-/* 3 kolonner hen over hele footeren */
 .footer-content {
   display: flex;
-  justify-content: space-between; /* spreder kolonnerne ud */
+  justify-content: space-between;
   gap: 4rem;
   width: 100%;
 }
 
 .footer-col {
-  flex: 1; /* alle kolonner fylder lige meget */
+  flex: 1;
   min-width: 200px;
 }
 
-/* Kolonne-styling */
 .footer-col h4 {
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -348,4 +346,105 @@ action-buttons {
 
 .footer-col a:hover {
   color: #fff;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #000;
+}
+
+/* LIGHT MODE COLORS */
+:root {
+  --color-bg: #f9e4d5;
+  --color-head-bg: #ff4b00;
+  --color-text-logotype: #fffae2;
+  --color-menu-bg: #000;
+  --color-link-bg: #ffff;
+
+  --color-card-bg: #ffffff;
+  --color-news-bg: #ffffff;
+  --color-info-bg: #ffffff;
+  --color-form-box: #ffffff; /* light mode form box */
+
+  --color-text: #000000;
+  --color-text-inverted: #ffffff;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* FORM BOX */
+#register .form-box {
+  background: var(--color-form-box);
+  border-radius: 20px;
+  width: 460px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.info-graphic,
+.info-text {
+  background-color: var(--color-info-bg);
+}
+
+/* DARK MODE COLORS */
+body.dark {
+  --color-bg: #373636 !important;
+  --color-head-bg: #ff4b00;
+  --color-menu-bg: #000000;
+  --color-link-bg: #9c9898;
+
+  --color-text: #ffffff;
+  color: var(--color-text);
+
+  --color-card-bg: #5e5353;
+  --color-news-bg: #5e5353;
+  --color-news-bg-inverted: #3f3838;
+  --color-info-bg: #5e5353;
+  --color-form-box: #5e5353;
+
+  --color-cta-card-bg: #ff4b00;
+  --color-cta-newscard-bg: #ff4b00;
+  --color-cta-newscard-bg-inverted: #111111;
+}
+
+/* SWITCH */
+.theme-switch {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+.theme-switch input {
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #bdbdbd;
+  border-radius: 34px;
+  transition: 0.3s;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.theme-switch input:checked + .slider {
+  background: #ff4500;
+}
+.theme-switch input:checked + .slider::before {
+  transform: translateX(24px);
 }
