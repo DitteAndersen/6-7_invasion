@@ -90,7 +90,6 @@ nav a {
   color: var(--color-text);
 }
 
-/* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
   background-color: var(--color-logotype-bg);
   display: flex;
@@ -117,14 +116,8 @@ header nav li a {
   border-radius: var(--border-radius-links);
 }
 
-/* Pilen efter menu-tekst */
 header > nav li > a:after {
   content: " \2192";
-}
-
-/* Global menu hover effekt - Lav den om til det, du synes */
-nav a:hover {
-  background-color: var(--color-link-hover);
 }
 
 nav a:active {
