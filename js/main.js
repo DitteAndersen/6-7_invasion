@@ -5,7 +5,6 @@ const titleEl = document.getElementById("popup-title");
 const textEl = document.getElementById("popup-text");
 const closeBtn = document.getElementById("popup-close");
 
-// --- SYMPTOMERNE ---
 document
   .querySelector(".daily_card:nth-child(1) .cta_btn")
   .addEventListener("click", (e) => {
@@ -25,7 +24,6 @@ document
     overlay.hidden = false;
   });
 
-// --- KROPPENS REAKTION ---
 document
   .querySelector(".daily_card:nth-child(2) .cta_btn")
   .addEventListener("click", (e) => {
@@ -45,7 +43,6 @@ document
     overlay.hidden = false;
   });
 
-// --- NYHED 1 ---
 document
   .querySelector("#breaking .news_card:nth-child(1) .cta_btn")
   .addEventListener("click", (e) => {
@@ -65,7 +62,6 @@ document
     overlay.hidden = false;
   });
 
-// --- NYHED 2 ---
 document
   .querySelector("#breaking .news_card:nth-child(2) .cta_btn")
   .addEventListener("click", (e) => {
@@ -85,7 +81,6 @@ document
     overlay.hidden = false;
   });
 
-// --- NYHED 3 ---
 document
   .querySelector("#breaking .news_card:nth-child(3) .cta_btn")
   .addEventListener("click", (e) => {
@@ -105,7 +100,7 @@ document
     overlay.hidden = false;
   });
 
-// --- LUK POPUP ---
+// --- LUK POPUP ---//
 closeBtn.addEventListener("click", () => {
   overlay.hidden = true;
 });
@@ -115,3 +110,22 @@ overlay.addEventListener("click", (e) => {
     overlay.hidden = true;
   }
 });
+// ====== DARK MODE =====//
+const darkToggle = document.getElementById("dark-toggle");
+
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+  if (darkToggle) darkToggle.checked = true;
+}
+
+if (darkToggle) {
+  darkToggle.addEventListener("change", () => {
+    if (darkToggle.checked) {
+      document.body.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  });
+}
