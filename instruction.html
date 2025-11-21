@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/infographic.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
+
     <title>Emergency Site</title>
   </head>
   <body id="instruction">
@@ -22,8 +23,14 @@
           <a href="index.html"> <img src="img/6_7.png" alt="Mit logo" /></a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li class="menu-switch">
+            <label class="theme-switch">
+              <input type="checkbox" id="dark-toggle" />
+              <span class="slider"></span>
+            </label>
+          </li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -36,7 +43,7 @@
     <main>
       <h1>6-7 INVASION</h1>
       <p>Børn går helt amok</p>
-      <section class="info-graphic" style="--color-info-bg: #a0c7bd">
+      <section class="info-graphic" style="--color-info-bg: #c45128">
         <?xml version="1.0" encoding="UTF-8"?>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -3035,34 +3042,35 @@
       </section>
     </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>6–7 Invasionen</h4>
+          <li>Officiel informationsside om den igangværende 6–7 situation.</li>
+        </div>
+
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="instruction.html">Nærkontakt</a></li>
+            <li><a href="register.html">Indberet</a></li>
+            <li><a href="#">Retningslinjer</a></li>
+            <li><a href="#">Ofte stillede spørgsmål</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="#">Hotline: 1234 1234</a></li>
+            <li><a href="#">Mail: info@67.hjælp</a></li>
+            <li><a href="#">Beredskabscenter</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/instructions.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
