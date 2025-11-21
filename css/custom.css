@@ -77,7 +77,7 @@ button[id^="info"] {
   transition: 0.2s;
   margin: 0 8px;
 }
-
+/*knap*/
 button[id^="info"]:hover {
   background-color: #ff4b00;
   color: #ffffff;
